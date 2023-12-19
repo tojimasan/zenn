@@ -1,9 +1,9 @@
 ---
-title: "不要なuseStateを削除する"
+title: "Reactエンジニアの日常: fetchデータ保存でのstateトラブルとその解決策"
 emoji: "🐥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["react", "javascript"]
-published: false
+published: true
 ---
 
 # はじめに
@@ -22,7 +22,7 @@ https://ja.react.dev/reference/react/useEffect
 
 ## 対象読者
 
-- React の useState や useEffect などの基本的なカスタムフックを理解している
+- React の `useState` や `useEffect` などの基本的なカスタムフックを理解している
 - 初心者〜歴１年程度のフロントエンドエンジニア
 
 # fetch したデータを state に持たせる
@@ -77,7 +77,7 @@ https://ja.react.dev/reference/react/useEffect
 
 @[stackblitz](https://stackblitz.com/edit/stackblitz-starters-nettjd?file=src%2FApp.tsx)
 
-2 つ目の `useEffect` を削除し、`users` は `data` の有無で持たせるデータを買えるようにしました。
+2 つ目の `useEffect` を削除し、`users` は `data` の有無で持たせるデータを変えるようにしました。
 
 ```tsx
 const users: User[] = data ? data : [];
