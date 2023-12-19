@@ -45,6 +45,8 @@ https://ja.react.dev/reference/react/useEffect
 2. 1 つ目の `useEffect` 内で実行される `setData` をトリガーとする再レンダリング
 3. 2 つ目の `useEffect` 内で実行される `setUsers` をトリガーとする再レンダリング
 
+![レンダリング回数](https://storage.googleapis.com/zenn-user-upload/406433d67e39-20231219.png)
+
 3 回レンダリングが実行されます。1 つ目の `useEffect` はデータを取得するため外部との接続に必要です。一方で 2 つ目の `useEffect` や関連する `useState` は無くせるように感じられます。
 
 また、App コンポーネントに子コンポーネントがあれば、その分レンダリングコストが増える実装です。
